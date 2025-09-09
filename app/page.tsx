@@ -37,9 +37,22 @@ export default function HomePage() {
             Arrêtez de Perdre 5000dh <span className="font-medium">Par Mois</span>
           </h1>
           <p className="text-xl md:text-2xl text-gray-600 mb-12 max-w-3xl mx-auto font-light leading-relaxed">
-            cafeee utilise des caméras connectées et l'IA pour surveiller vos employés, compter automatiquement les
-            cafés servis et détecter les comportements suspects.
-          </p>
+          <span
+            style={{
+              backgroundColor: "oklch(0.769 0.188 70.08)",
+              color: "black",
+              padding: "2px 6px",
+              borderRadius: "4px",
+              fontStyle: "italic",
+            }}
+          >
+            cafeee
+          </span>{" "}
+          utilise des caméras connectées et l'IA pour surveiller vos employés, compter automatiquement les
+          cafés servis et détecter les comportements suspects.
+        </p>
+
+
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
             <Button
               size="lg"
@@ -82,15 +95,20 @@ export default function HomePage() {
         className="max-w-md w-full rounded-3xl shadow-2xl mx-auto"
       />
       {/* Texte en haut à droite */}
-      <div className="absolute top-4 right-4 bg-black bg-opacity-50 text-white px-4 py-2 rounded-lg">
+      <div className="absolute top-4 right-4 bg-black bg-opacity-50 text-white px-4 py-2 rounded-lg" >
         Notre innovation arrive jusqu'à vous ;)
       </div>
       {/* Texte au centre à gauche */}
-      <div className="absolute top-1/2 left-25 transform -translate-y-1/5 bg-black bg-opacity-50 text-white px-4 py-2 rounded-lg">
+      <div
+ 
+        className="absolute top-1/2 left-25 transform -translate-y-1/5 bg-black text-white px-4 py-2 rounded-lg"
+      >
         ça ne vous coûte rien de tester
       </div>
+
+
       {/* Texte en bas à droite */}
-      <div className="absolute bottom-4 right-30 bg-black bg-opacity-50 text-white px-4 py-2 rounded-lg">
+      <div className="absolute bottom-4 right-30 bg-black bg-opacity-50 text-white px-4 py-2 rounded-lg"style={{ backgroundColor: "oklch(0.769 0.188 70.08);" }}>
         Ne perdez pas de temps !!!!!
       </div>
     </div>
