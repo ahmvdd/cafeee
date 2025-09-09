@@ -220,7 +220,7 @@ export default function HomePage() {
         <div className="max-w-4xl mx-auto text-center">
           <h2 className="text-4xl md:text-5xl font-serif font-light mb-6">Prêt à transformer votre restaurant ?</h2>
           <p className="text-xl text-gray-600 mb-12 max-w-2xl mx-auto font-light leading-relaxed">
-            Rejoignez plus de 500 restaurants qui font confiance à CaféWatch pour optimiser leurs opérations.
+            Rejoignez plus de 3 restaurants qui font confiance à cafeee pour optimiser leurs opérations.
           </p>
           <Button
             size="lg"
@@ -272,7 +272,7 @@ export default function HomePage() {
         <h3 className="text-2xl font-serif font-medium mb-4">2024</h3>
         <h4 className="text-lg font-medium mb-3">L'expansion</h4>
         <p className="text-gray-300 font-light leading-relaxed">
-          Aujourd'hui, plus de 500 établissements nous font confiance à travers l'Europe. Notre mission :
+          Aujourd'hui, plus de 5 établissements nous font confiance à travers l'Europe. Notre mission :
           démocratiser l'intelligence artificielle dans la restauration.
         </p>
       </div>
