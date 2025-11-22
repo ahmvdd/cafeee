@@ -2,6 +2,9 @@ import { Button } from "@/components/ui/button"
 import { Badge } from "@/components/ui/badge"
 import { Eye, Coffee, Shield, BarChart3, ArrowRight, Play, Users, Award, Clock } from "lucide-react"
 
+import Link from "next/link";
+
+
 export default function HomePage() {
   return (
     <div className="min-h-screen bg-white text-black">
@@ -9,7 +12,7 @@ export default function HomePage() {
         <div className="max-w-6xl mx-auto flex h-16 items-center justify-between px-6">
           <div className="flex items-center space-x-2">
             <Eye className="h-6 w-6 text-black" />
-            <span className="text-xl font-medium text-black italic">cafeee</span>
+            <span className="text-xl font-medium text-black italic" >cafeee</span>
           </div>
           <nav className="hidden md:flex items-center space-x-8">
             <a href="#features" className="text-gray-600 hover:text-black transition-colors text-sm">
@@ -21,11 +24,15 @@ export default function HomePage() {
             <a href="#about" className="text-gray-600 hover:text-black transition-colors text-sm">
               Notre histoire
             </a>
-            <Button variant="ghost" size="sm" className="text-black hover:bg-gray-50">
-              Connexion
-            </Button>
+            
+            <Link href="/signin">
+              <Button variant="ghost" size="sm" className="text-black hover:bg-gray-50">
+                Connexion
+              </Button>
+            </Link>
+
             <Button size="sm" className="bg-black text-white hover:bg-gray-800 rounded-full px-6">
-              Essai Gratuit
+              Demander une démo
             </Button>
           </nav>
         </div>
@@ -34,7 +41,7 @@ export default function HomePage() {
       <section className="pt-24 pb-32 px-6">
         <div className="max-w-4xl mx-auto text-center">
           <h1 className="text-5xl md:text-7xl font-serif font-light mb-8 leading-tight text-balance">
-            Arrêtez de Perdre 5000dh <span className="font-medium">Par Mois</span>
+            Surveillez votre restaurant avec <span className="font-medium" >l'intelligence artificielle</span>
           </h1>
           <p className="text-xl md:text-2xl text-gray-600 mb-12 max-w-3xl mx-auto font-light leading-relaxed">
           <span
@@ -58,7 +65,7 @@ export default function HomePage() {
               size="lg"
               className="bg-black text-white hover:bg-gray-800 rounded-full px-8 py-4 text-lg font-medium"
             >
-              Commencer l'essai gratuit
+              Demander une démo
               <ArrowRight className="ml-2 h-5 w-5" />
             </Button>
             <Button variant="ghost" size="lg" className="text-black hover:bg-gray-50 rounded-full px-8 py-4 text-lg">
@@ -275,11 +282,11 @@ export default function HomePage() {
         <div className="w-20 h-20 bg-white rounded-3xl flex items-center justify-center mx-auto mb-8">
           <Award className="h-10 w-10 text-black" />
         </div>
-        <h3 className="text-2xl font-serif font-medium mb-4">2022</h3>
+        <h3 className="text-2xl font-serif font-medium mb-4">2024</h3>
         <h4 className="text-lg font-medium mb-3">L'innovation</h4>
         <p className="text-gray-300 font-light leading-relaxed">
           Développement de notre IA propriétaire capable de reconnaître et compter automatiquement les boissons
-          servies avec une précision de 99,7%.
+          servies avec une précision de 77,7%.
         </p>
       </div>
 
@@ -287,10 +294,10 @@ export default function HomePage() {
         <div className="w-20 h-20 bg-white rounded-3xl flex items-center justify-center mx-auto mb-8">
           <Clock className="h-10 w-10 text-black" />
         </div>
-        <h3 className="text-2xl font-serif font-medium mb-4">2024</h3>
+        <h3 className="text-2xl font-serif font-medium mb-4">2025</h3>
         <h4 className="text-lg font-medium mb-3">L'expansion</h4>
         <p className="text-gray-300 font-light leading-relaxed">
-          Aujourd'hui, plus de 5 établissements nous font confiance à travers l'Europe. Notre mission :
+          Aujourd'hui, plus de 5 établissements nous font confiance à travers la France. Notre mission :
           démocratiser l'intelligence artificielle dans la restauration.
         </p>
       </div>
@@ -341,7 +348,13 @@ export default function HomePage() {
             <span className="text-black">
               ce site est crée et designer pas sayeh ahmed ;)
             </span>{" "}
-            <a
+            <a style={{
+              backgroundColor: "oklch(0.769 0.188 70.08)",
+              color: "black",
+              padding: "2px 6px",
+              borderRadius: "4px",
+              fontStyle: "italic",
+            }}
               href="https://www.sayehahmed.com/"
               target="_blank"
               rel="noopener noreferrer"
